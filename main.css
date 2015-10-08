@@ -1,0 +1,206 @@
+@font-face{
+	font-family: 'Bebas Neue';
+	src: url(bebas_neue/BebasNeue.otf);
+}
+h1 {
+	font-family: 'Bebas Neue';
+	font-size: 36px;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-variant-ligatures: normal;
+	font-weight: normal;
+	text-align: center;
+}
+
+h2{
+	font-family: 'Bebas Neue';
+	font-size: 24px;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-variant-ligatures: normal;
+	font-weight: normal;
+	text-align: center;
+}
+html, body {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    min-height: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Bebas Neue', RobotoDraft,Roboto,'Helvetica Neue',sans-serif;
+
+}
+
+table, input, button {
+	font-size: 18px;
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.container{
+    display: flex;
+}
+.fixed{
+    width: 320px;
+}
+.flex-item{
+    /*flex-grow: 1;*/
+    width: 600px;
+}
+.cost-box{
+    border-width: 1px;
+    border-style: solid;
+}
+
+/* the four color box */
+.widget {
+	margin: 8px;
+    position: relative;
+    background-size: cover;
+    background-color: #fff;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    width: 22%;
+    min-height: 100px;
+    min-width: 100px;
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
+    font-weight: 500;
+    line-height: 24px;
+    float: left;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	padding-bottom: 8px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 8px;
+}
+
+.widge-rate-input{
+	 float: left;
+}
+.widge-label{
+	opacity: .6!important;
+	font-size: 24px;
+	position: relative;
+	float: left;
+	min-height: 100px;
+
+}
+.widge-value{
+	margin-bottom: 0!important;
+	
+	vertical-align: baseline;
+	position: absolute;
+	right: 24px;
+	bottom: 24px;
+	font-size: 64px;
+
+}
+
+
+#orange-box{
+	border-color: rgb(255, 87, 34);
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 87, 34);
+}
+
+#lblue-box{
+	border-color: rgb(0, 188, 212);
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 188, 212);
+}
+
+#dblue-box{
+	border-color: rgb(63, 81, 181);
+    color: rgba(255, 255, 255, 0.870588);
+    background-color: rgb(63, 81, 181);
+}
+
+#green-box{
+	border-color: rgb(0, 150, 136);
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 150, 136);
+}
+.background-div{
+ background-color: rgba(0, 0, 0, 0.0980392);
+-webkit-box-direction: normal;
+-webkit-box-orient: vertical;
+-webkit-font-smoothing: antialiased;
+border-bottom-color: rgba(0, 0, 0, 0.870588);
+border-bottom-style: none;
+border-bottom-width: 0px;
+border-image-outset: 0px;
+border-image-repeat: stretch;
+/* border-image-slice: 100%; 
+border-image-source: none;
+border-image-width: 1;
+border-left-color: rgba(0, 0, 0, 0.870588);
+border-left-style: none;
+border-left-width: 0px;
+border-right-color: rgba(0, 0, 0, 0.870588);
+border-right-style: none;
+border-right-width: 0px;
+border-top-color: rgba(0, 0, 0, 0.870588);
+border-top-style: none;
+border-top-width: 0px;
+box-sizing: border-box;
+color: rgba(0, 0, 0, 0.870588);
+display: flex;
+flex-direction: column;*/
+font-family: 'Bebas Neue', RobotoDraft, Roboto, 'Helvetica Neue', sans-serif;
+font-size: 24px;
+/* height: 1101px; */
+line-height: 24px;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 0px;
+padding-bottom: 16px;
+padding-left: 24px;
+padding-right: 24px;
+padding-top: 16px;
+position: relative;
+vertical-align: baseline;
+/* width: 1080px; */
+z-index: 1;
+
+}
+
+#chartContainer{
+	margin:0 auto;
+	text-align:center;
+	width: 500px;
+	box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
+}
+#calculator_button{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+#calculator_button:active{
+	vertical-align: top;
+    padding: 5px 3px;
+}
+
+
+#header {
+
+	box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
+}
+
+#footer {
+	box-shadow: 0 -5px 5px -5px #333;
+}
+
+#calculator_div{
+	height: 90px;
+}

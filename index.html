@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>Net Profit Calculated by Conversion Rate</title>
+<script type="text/javascript" src="fusioncharts-suite-xt/js/fusioncharts.js"></script>
+<script type="text/javascript" src="fusioncharts-suite-xt/js/themes/fusioncharts.theme.fint.js"></script>
+<script type="text/javascript" src="conv.js"></script>
+<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+  <!-- title div -->
+  <div id="header"><h1>Net Profit Calculated by Conversion Rate</h1></div><!-- the main div 
+--><div class="background-div">
+
+  <!-- 4 box here -->
+    <div class="widget" id="orange-box">
+      <span class="widge-label">Traffic</span><span class="widge-value"></span>
+      <span class="widge-value"><span id="traffic"></span></span>
+    </div>
+    <div class="widget" id="lblue-box">
+      <span class="widge-label">Leads</span> 
+      <span class="widge-value" id="leads"></span>
+    </div>
+    <div class="widget" id="dblue-box">
+      <span class="widge-label">Sales</span> 
+      <span class="widge-value" id="sales"></span>
+    </div>
+    <div class="widget" id="green-box">
+      <span class="widge-label">Net</span> 
+      <span class="widge-value">$ <span id="net"></span></span>
+    </div>
+  <div>
+<br style="clear: left;" />
+  </div>
+  <div id="calculator_div">
+    <img id="calculator_button" onclick = "drawChart();" src="images/calculator_button.png"/>
+  </div>
+  <div class="container">
+    <!-- <div class="fixed widget" id="chartContainer_standard"></div>-->
+    <div class="flex-item widget " id="chartContainer"></div>
+  </div>
+<br style="clear: left;" />
+<div class="cost-box">
+    <table>
+    <tr><td>Traffic:</td><td><input name="traffic" id="trafficInput" value="1000"></input></td><td></td>
+    </tr>
+    <tr>
+        <td>Lead Conv Rate:</td><td><input name="leadsRate" id="leadsRate" value = "10" size="3"></input>%</td><td></td>
+    </tr>
+    <tr>
+        <td>Sales Conv Rate:</td><td><input name="salesRate" id="salesRate" value = "10" size="3"></input>%</td><td></td>
+    </tr>
+<tr>
+        <td>Commission per Unit:</td><td><input name="commission" id="commission" value = "10"></input></td><td></td>
+    </tr>
+    <tr>
+        <td>Cost per Unit:</td><td><input name="cost" id="cost" value = "10" ></input></td><td></td>
+    </tr>
+
+    <tr><td>Web Hosting:</td><td><input type="text" value="200" id="cost_webhost"></input></td>
+        <td><button type="checkbox" id="cost_webhost_checkbox" onclick="setDefaultValue('cost_webhost', webhost_default_cost);">Default</button></td>
+    </tr>
+    <tr><td>Dedicated Servers:</td><td><input type="text" value="15000" id="cost_server"></input></td>
+        <td><button id="cost_webhost_checkbox" onclick="setDefaultValue('cost_server', server_default_cost);">Default</button></td>
+    </tr>
+    <tr><td>Employees:</td><td><input type="text" value="30000" id="cost_employee"></input></td>
+        <td><button type="checkbox" id="cost_webhost_checkbox" onclick="setDefaultValue('cost_employee', employee_default_cost);">Default</button></td>
+    </tr>
+    <tr><td>Office Rental: </td><td><input type="text" value="30000" id="cost_office"></input></td>
+        <td><button type="checkbox" id="cost_webhost_checkbox" onclick="setDefaultValue('cost_office', office_default_cost);">Default</button></td>
+    </tr>
+    </table>
+
+  </div>
+  <!--Revenue: <span id="revenue"></span><br/>
+  Net: <span id="net"></span><br/>-->
+  <script>
+  (function() {
+    // drawStandardChart();
+})();
+  </script>
+</div>
+<div id="footer"><h2>&#169; 2015 convrate.com</h2></div>
+</body>
+</html>
